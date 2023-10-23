@@ -1,7 +1,7 @@
-class Predator {
+let Creature = require('./creatute')
+module.exports =class Predator extends Creature {
     constructor(x, y, index) {
-        this.x = x;
-        this.y = y;
+       super(x, y, index)
         this.energy = 18;
         this.index = index;
         this.directions = [];
